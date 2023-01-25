@@ -1,0 +1,114 @@
+%svg-common {
+	background: url("sprite.svg") no-repeat;
+}
+
+.arow-bottom {
+	@extend %svg-common;
+	background-position: 68.96551724137932% 0;
+}
+
+.arow-bottom-dims {
+	width: 54px;
+	height: 54px;
+}
+
+.arows-acent-left {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.arows-acent-left-dims {
+	width: 60px;
+	height: 37.22px;
+}
+
+.arows-right {
+	@extend %svg-common;
+	background-position: 35.714285714285715% 0;
+}
+
+.arows-right-dims {
+	width: 60px;
+	height: 37.22px;
+}
+
+.cart {
+	@extend %svg-common;
+	background-position: 0 25.493150684931507%;
+}
+
+.cart-dims {
+	width: 55px;
+	height: 54px;
+}
+
+.clock {
+	@extend %svg-common;
+	background-position: 0 62.47945205479452%;
+}
+
+.clock-dims {
+	width: 54px;
+	height: 54px;
+}
+
+.facebook {
+	@extend %svg-common;
+	background-position: 31.03448275862069% 62.47945205479452%;
+}
+
+.facebook-dims {
+	width: 54px;
+	height: 54px;
+}
+
+.instagram {
+	@extend %svg-common;
+	background-position: 62.06896551724138% 62.47945205479452%;
+}
+
+.instagram-dims {
+	width: 54px;
+	height: 54px;
+}
+
+.music {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.music-dims {
+	width: 54px;
+	height: 54px;
+}
+
+.phones {
+	@extend %svg-common;
+	background-position: 100% 36.986301369863014%;
+}
+
+.phones-dims {
+	width: 54px;
+	height: 54px;
+}
+
+.searching {
+	@extend %svg-common;
+	background-position: 31.791907514450866% 25.493150684931507%;
+}
+
+.searching-dims {
+	width: 55px;
+	height: 54px;
+}
+
+.youtube {
+	@extend %svg-common;
+	background-position: 0 99.46575342465754%;
+}
+
+.youtube-dims {
+	width: 54px;
+	height: 54px;
+}
+
