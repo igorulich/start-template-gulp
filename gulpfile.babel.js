@@ -34,6 +34,7 @@ import { connectionFonts } from "./tasks/connectionFonts"/*створення п
 (exports.clean = clean);
 (exports.css = css);
 export { watchFiles as watch };
+/*ЗАПУСКАЕМО gulp*/
 exports.default = series(
 	clean,
 	parallel(
