@@ -87,5 +87,5 @@ exports.build = series(
 	),
 );
 // deploy
-
+/*підключаемо в проект tasks*/
 requireDir("./tasks", { recurse: true });
