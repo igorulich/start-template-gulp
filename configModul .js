@@ -1,8 +1,8 @@
-export const config = {
-	clean: `./dist/**/*.*`,
-	srcFonts: `./src/scss/_fonts.scss`,
-	appFonts: `./dist/fonts/`,
-	build: {
+export const config = {/*експортуемо файл з кофігурацфями*/
+	clean: `./dist/**/*.*`,/*чистка проекту*/
+	srcFonts: `./src/scss/_fonts.scss`,/*шлях до файла підключеня шріфтів*/
+	appFonts: `./dist/fonts/`,/*шлях до файлів зшрифтами*/
+	build: {/*папка для продакшена*/
 		html: `./dist/`,
 		js: `./dist/js`,
 		css: `./dist/css/`,
@@ -11,7 +11,7 @@ export const config = {
 		fonts: `./dist/fonts/`,
 		resources: `./dist/`,
 	},
-	src: {
+	src: {/*папка с вихідниками*/
 		html: `./src/*.html`,
 		js: `./src/js/**/*.js`,
 		css: `./src/scss/**/*.scss`,
@@ -24,7 +24,7 @@ export const config = {
 		fonts: `./src/fonts/*.ttf `,
 		resources: `./src/resources/*.*`,
 	},
-	watch: {
+	watch: {/*папка для стеження за змінами у файлах*/
 		html: `./src/**/*.html`,
 		js: [`./src/dist/js/*.js`, `!./src/dist/js/scripts.js.map`],
 		css: [`./src/scss/**/*.scss`, `!./src/scss/styles.css.map`],
@@ -34,7 +34,7 @@ export const config = {
 		fonts: `./src/fonts/*.{ttf, woff, woff2 }`,
 		resources: `./src/resources/*.*`,
 	},
-	svgSpriteConfig: {
+	svgSpriteConfig: {/*конфігурація для спрайту*/
 		log: "info",
 		shape: {
 			dimension: {
@@ -69,7 +69,7 @@ export const config = {
 			},
 		},
 	},
-	serverConfig: {
+	serverConfig: {/*конфігурація для сервера*/
 			server: {
 			baseDir: "./dist/",
 		},
@@ -80,7 +80,7 @@ export const config = {
 		logPrefix: "the process is running",
 		files: false,
 	},
-	autoprefixerConfig: {
+	autoprefixerConfig: {/*конфігурація для автопрефіксу*/
 		overrideBrowserslist: [
 			"last 3 versions",
 			"Chrome >= 20",
