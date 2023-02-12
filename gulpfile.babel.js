@@ -3,9 +3,9 @@ import requireDir from "require-dir";
 /*импортуемо конфігурацфї бібліотек*/
 import { series, parallel } from "gulp";
 
-import { Webp } from "./tasks/Webp";/*форматуемо фото в webp*/
-import { resources } from "./tasks/resources";/*переносимо допоміжні матеріали в корінь проекту такі як audio video favicon*/
-import { clean } from "./tasks/clean";/*видаленя папок з файлами з старим кодом*/
+import { Webp } from "./tasks/Webp";/*імпорт функції для форматуемо фото в webp*/
+import { resources } from "./tasks/resources";/*імпорт функції для переносимо допоміжні матеріали в корінь проекту такі як audio video favicon*/
+import { clean } from "./tasks/clean";/*імпорт функції для видаленя папок з файлами з старим кодом*/
 import { icons } from "./tasks/icons";/*створення спрайтів*/
 import { svgIcons } from "./tasks/svgIcons";/*перенесеня спрайтів зи стилями в корневу папку src*/
 import { server } from "./tasks/server";/*запуск програми на локальному сервері*/
