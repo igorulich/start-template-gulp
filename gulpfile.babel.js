@@ -1,6 +1,6 @@
 "use strict";
 import requireDir from "require-dir";
-
+/*импортуемо конфігурацфї бібліотек*/
 import { series, parallel } from "gulp";
 
 import { Webp } from "./tasks/Webp";/*форматуемо фото в webp*/
