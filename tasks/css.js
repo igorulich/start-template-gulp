@@ -18,28 +18,28 @@ import dartSass from "sass";/*Щоб використовувати gulp-sassв 
 імпорт  gulpSass  з  'gulp-sass' ; 
 const  sass  =  gulpSass ( dartSass ) */
 import gulpSass from "gulp-sass";/*імпортуемо бібліотеку*/
-export const sass = gulpSass(dartSass);
-export function css(cb) {
-	return src(config.src.css)
-		.pipe(sourcemaps.init())
-		.pipe(plumber())
-		.pipe(sass().on("error", sass.logError))
-		.pipe(autoprefixer(config.autoprefixerConfig))
-		.pipe(
+export const sass = gulpSass(dartSass);/*експортуемо константу*/
+export function css(cb) {/*експортуемо tasks css*/
+	return src(config.src.css)/*беремо всі вихідні файли які прописання у нас у файлі конфігурації*/
+		.pipe(sourcemaps.init())/*пропускаемо через бібліотеку для створеня sourcemaps файла в пректі*/
+		.pipe(plumber())/*пропускаемо через плагін для уникненя помилок*/
+		.pipe(sass().on("error", sass.logError))/*пропускаемо через плагін sass для синхронного відтворення вашого CSS*/
+		.pipe(autoprefixer(config.autoprefixerConfig))/*пропускаемо через автопрефіксер для коректного відображення у більш старійших браузерах*/
+		.pipe(/*тонка обгортка*/
 			cleanCSS({
 				level: 2,
 			})
 		)
 		.pipe(
-			rename({
+			rename({/*переіменовуем файл та змінюем розширення файлу з SCSS або SASS на CSS*/
 				basename: "styles",
 				extname: ".css",
 			})
 		)
-		.pipe(plumber.stop())
-		.pipe(sourcemaps.write("."))
-		.pipe(dest(config.build.css))
-		.pipe(browserSync.reload({ stream: true }))
-		.pipe(livereload()),
+		.pipe(plumber.stop())/*зачиняется плагін для запобіганью помилок*/
+		.pipe(sourcemaps.write("."))/*зачиняемо плагин для створеня карти і указуемо крапкою для зберіганя у цьому з ісходним файлом положеню*/
+		.pipe(dest(config.build.css))/*та виводимо у кінцеву папку*/
+		.pipe(browserSync.reload({ stream: true }))/*відночасно запускаемо браузер для відтвореня у режимі онлайн у нашому проекті*/
+		.pipe(livereload()),/*буде автоматично відстежувати зміни*/
 		cb();
 }
