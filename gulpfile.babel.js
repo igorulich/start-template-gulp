@@ -20,7 +20,7 @@ import { moveFontsWoff } from "./tasks/moveFontsWooff";/*створення ttf2
 import { connectionFonts } from "./tasks/connectionFonts"/*створення підключення шрифтів різноі конфігурації та стилю*/
 
 //Dev
-
+/*ЕКСПОРТУЕМО ФУНКЦІЇ*/
 (exports.connectionFonts = connectionFonts);
 (exports.moveFontsWoff2 = moveFontsWoff2);
 (exports.moveFontsWoff = moveFontsWoff);
