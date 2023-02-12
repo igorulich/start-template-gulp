@@ -1,7 +1,7 @@
 "use strict";
 import { config } from "../configModul ";/*підключення файла з конфігураціями*/
 import { src, dest } from "gulp";/*підключення gulp зйого можливими  виконання gulpкоманди прописаними у фігурних дужках{обовязково прописуемо}*/
-import plumber from "gulp-plumber";/*Коротко кажучи, він замінює pipeметод і видаляє стандартний onerrorобробник errorподії,
+import plumber from "gulp-plumber";/*Коротко кажучи, він замінює pipeметод і видаляє стандартний onerrorобробник error події,
 який за замовчуванням відключає потоки в разі помилки. */
 import sourcemaps from "gulp-sourcemaps";/*Вбудовані вихідні карти вбудовані у вихідний файл.*/
 import autoprefixer from "gulp-autoprefixer";/*Префікс CSS за допомогою автопрефікса*/
