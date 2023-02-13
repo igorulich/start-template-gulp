@@ -15,7 +15,7 @@ export function js(cb) {/*експортуемо tasks js*/
 	return src(config.src.js)/*беремо всі вихідні файли які прописання у нас у файлі конфігурації*/
 		.pipe(plumber())/*пропускаемо через плагін для уникненя помилок*/
 		.pipe(
-			webpackStream({;/*берем свій файл обовязково мае назву main.js* пропускаемо через webpackStream та за допомогою babel-loader пересобираемо в один та міняю назву на
+			webpackStream({/*берем свій файл обовязково мае назву main.js* пропускаемо через webpackStream та за допомогою babel-loader пересобираемо в один та міняю назву на
 			scripts.js*/
 				mode: "development",
 				output: {
