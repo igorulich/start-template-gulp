@@ -1,9 +1,6 @@
 "use strict";
-import { config } from "../configModul ";
-import { src, dest } from "gulp";
-import browserSync from "browser-sync";
+import { config } from "../configModul ";/*підключення файла з конфігураціями*/
 export function resources(cb) {
-	return src(config.src.resources)
-		.pipe(dest(config.build.resources))
-		.pipe(browserSync.reload({ stream: true })), cb();
+	return src(config.src.resources)/*беремо всі вихідні файли які прописання у нас у файлі конфігурації*/
+		.pipe(dest(config.build.resources))/*та виводимо у кінцеву папку*/
 };
